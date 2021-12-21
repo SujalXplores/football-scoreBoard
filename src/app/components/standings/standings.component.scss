@@ -1,78 +1,97 @@
-.header-logo {
-    height: 40px;
-    padding: 5px;
-}
-
-span {
-    margin: 10px;
+.title {
+  margin: 10px;
+  line-height: 1rem;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cntainer {
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  margin: 1rem;
 }
 
 .field {
-    width: auto;
-    max-width: 100%;
-    overflow: auto;
+  width: auto;
+  max-width: 100%;
+  overflow: auto;
 }
 
 .mat-form-field {
-    margin-top: 20px;
-    margin-right: auto;
+  margin-top: 20px;
 }
 
-.example-toolbar {
-    width: 100%;
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: rgb(255 255 255 / 50%);
+}
+
+.main-toolbar {
+  width: auto;
+  margin: 0 1rem 0 1rem;
+  border-radius: 0 0 16px 16px;
+}
+
+.glass-effect {
+  background: #3f51b5;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
 }
 
 th.mat-header-cell {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.example-container {
-    height: 500px;
-    width: 550px;
-    max-width: 100%;
-    overflow: auto;
+.main-container {
+  height: 500px;
+  max-width: 100%;
+  overflow: auto;
+  margin-bottom: 2rem;
+  border-radius: 16px;
 }
 
 table {
-    width: 800px;
+  width: 800px;
 }
 
-.example-container::-webkit-scrollbar {
-    display: none;
+.main-container::-webkit-scrollbar {
+  display: none;
 }
 
 td.mat-column-star {
-    width: 20px;
-    padding-right: 8px;
+  width: 20px;
+  padding-right: 8px;
 }
 
 th.mat-column-position,
 td.mat-column-position {
-    padding-left: 8px;
+  padding-left: 8px;
 }
 
 .mat-table-sticky-border-elem-right {
-    border-left: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
 }
 
 .mat-table-sticky-border-elem-left {
-    border-right: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
 }
 
 th,
 td {
-    overflow: hidden;
-    width: 200px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+footer {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px 16px 0 0;
+  margin: 1rem 1rem 0;
+  font-size: 1rem;
 }

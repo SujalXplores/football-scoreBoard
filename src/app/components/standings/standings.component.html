@@ -1,39 +1,8 @@
-<div class="cntainer mat-app-background">
-  <mat-toolbar color="primary" class="example-toolbar">
-    <img width="32px" height="32px" src="https://img.icons8.com/cotton/2x/football-ball.png" />
-    <span class="title">FOOTBALL STANDINGS</span>
-    <div class="ml-auto">
-      <button mat-icon-button (click)="is_dark = !is_dark;toggle(is_dark ? true : false)">
-        <mat-icon>{{mode_icon}}</mat-icon>
-      </button>
-      <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon>more_vert</mat-icon>
-      </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>
-          <mat-icon color="warn">hdr_auto</mat-icon>
-          <span>v11.1.2</span>
-        </button>
-        <button mat-menu-item (click)="telegram()">
-          <mat-icon style="color: lightskyblue;">send</mat-icon>
-          <span>Telegram Channel</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon style="color: lightgreen;">https</mat-icon>
-          <span>SSL/Encryption</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon style="color: orange;">local_fire_department</mat-icon>
-          <span>Hosted on Firebase</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon color="primary">admin_panel_settings</mat-icon>
-          <span>Sujal Shah</span>
-        </button>
-      </mat-menu>
-    </div>
+<div class="cntainer">
+  <mat-toolbar class="main-toolbar glass-effect">
+    <span class="title">Football Standings</span>
   </mat-toolbar>
-  <div class="content mat-app-background">
+  <div class="content glass-effect">
     <div class="field">
       <mat-form-field appearance="fill">
         <mat-label>Choose League</mat-label>
@@ -48,7 +17,7 @@
         </mat-select>
       </mat-form-field>
     </div>
-    <div class="example-container mat-elevation-z8">
+    <div class="main-container mat-elevation-z8 glass-effect">
       <table mat-table [dataSource]="teams$">
         <ng-container matColumnDef="name" sticky>
           <th mat-header-cell *matHeaderCellDef> Team </th>
@@ -110,4 +79,16 @@
       </table>
     </div>
   </div>
+  <footer class="glass-effect">
+    Made with &nbsp; <svg width="20" height="20" viewBox="0 0 200 200">
+      <g transform="translate(100 100)">
+        <path transform="translate(-50 -50)" fill="tomato"
+          d="M92.71,7.27L92.71,7.27c-9.71-9.69-25.46-9.69-35.18,0L50,14.79l-7.54-7.52C32.75-2.42,17-2.42,7.29,7.27v0 c-9.71,9.69-9.71,25.41,0,35.1L50,85l42.71-42.63C102.43,32.68,102.43,16.96,92.71,7.27z">
+        </path>
+        <animateTransform attributeName="transform" type="scale" values="1; 1.5; 1.25; 1.5; 1.5; 1;" dur="1s"
+          repeatCount="indefinite" additive="sum">
+        </animateTransform>
+      </g>
+    </svg> &nbsp; by Sujal Shah
+  </footer>
 </div>
